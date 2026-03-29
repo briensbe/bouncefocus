@@ -30,7 +30,7 @@ body {
     flex-direction: column;
     gap: 40px;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
 }
 
 .animation-section {
@@ -42,7 +42,7 @@ body {
 }
 
 .title {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 20px;
     letter-spacing: 1px;

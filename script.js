@@ -1,12 +1,12 @@
 const CONFIG = {
     gravity: 0.18,
     bounce: -1.0, // Energy-preserving bounce
-    ballRadius: 10,
+    ballRadius: 7,
     ballColor: '#00d2ff',
-    barWidth: 46,
-    maxBarHeight: 180,
+    barWidth: 30,
+    maxBarHeight: 120,
     maxLevels: 5,
-    barRounded: 8,
+    barRounded: 6,
     barFill: 'rgba(255, 255, 255, 0.05)',
     barStroke: 'rgba(255, 255, 255, 0.3)',
     barHighlight: 'rgba(0, 210, 255, 0.9)',
@@ -212,7 +212,7 @@ class Simulation {
             const dist = targetBar.x - this.ball.x;
             
             this.ball.y = barTop - this.ball.r;
-            this.ball.vy = -Math.sqrt(2 * CONFIG.gravity * (this.height - 150));
+            this.ball.vy = -Math.sqrt(2 * CONFIG.gravity * (this.height - 100));
             
             const timeToImpact = Math.abs(this.ball.vy / CONFIG.gravity) * 2;
             this.ball.vx = dist / timeToImpact;
